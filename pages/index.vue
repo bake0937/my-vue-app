@@ -3,7 +3,9 @@
     <h1 class="title">My Blog App</h1>
 
     <ul>
-        <li v-for='(post, index) in posts' :key="index">{{post.title}}</li>
+        <li v-for='(post, index) in posts' :key="index">
+            <router-link :to="`/post/${post.id}`">{{post.title}}</router-link>
+        </li>
     </ul>
   </div>
 </template>
