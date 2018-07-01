@@ -3,7 +3,7 @@
     <h1 class="title">My Blog App</h1>
 
     <ul>
-        <li v-for="post in posts">{{post.title}}</li>
+        <li v-for='(post, index) in posts' :key="index">{{post.title}}</li>
     </ul>
   </div>
 </template>
