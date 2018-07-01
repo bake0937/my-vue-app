@@ -2,7 +2,7 @@
   <div>
     <article v-if="post">
         <h1 class="title">{{post.title}}</h1>
-        <p> ここに記事の本文が入ります。 </p>
+        <p> {{post.body}} </p>
     </article>
   </div>
 </template>
