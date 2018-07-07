@@ -1,8 +1,8 @@
 <template>
   <div>
     <article v-if="post">
-        <h1 class="title">{{post.title}}</h1>
-        <p> {{post.body}} </p>
+        <h1 class="title">{{post.name}}</h1>
+        <p> {{post.text}} </p>
     </article>
   </div>
 </template>

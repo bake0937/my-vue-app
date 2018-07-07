@@ -4,7 +4,7 @@
 
     <ul>
         <li v-for='(post, index) in posts' :key="index">
-            <router-link :to="`/post/${post.id}`">{{post.title}}</router-link>
+            <router-link :to="`/post/${post.id}`">{{post.name}}</router-link>
         </li>
     </ul>
   </div>

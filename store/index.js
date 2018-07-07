@@ -12,9 +12,8 @@ export const mutations = {
 
 export const actions = {
   load(ctx) {
-    axios.get("http://jsonplaceholder.typicode.com/posts").then((result) => {
+    axios.get("http://localhost:4000/api/v1/tweets").then((result) => {
       ctx.commit("set", result.data)
     })
   }
-
 }
